@@ -38,7 +38,7 @@ void whichWay(){
     printf( STR_EXPECTED_INPUT );
     printf( EXIT_PROGRAM );
 
-    /*Find the newline character and replace it with a NULL character.*/
+    /*If ctrl-D is detected, print message and return.*/
     if( fgets( userInput, BUFSIZ, stdin ) == NULL )
         printf( STR_BYE );
         return;
